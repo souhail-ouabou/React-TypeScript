@@ -3,8 +3,8 @@
 }
 
 
-export const Heading = (props:HeadingProps) => {
+export const Heading = ({children}:HeadingProps) => {
   return (
-    <div>{props.children}</div>
+    <div>{children}</div>
   )
 }
