@@ -3,10 +3,10 @@ import { Button } from './components/Button'
 import { Container } from './components/Container'
 import { Greet } from './components/Greet'
 import { Heading } from './components/Heading'
-import { Input } from './components/input'
 import { Oscar } from './components/Oscar'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
+import { Counter } from './components/state/Counter'
 import { Status } from './components/Status'
 
 function App() {
@@ -31,7 +31,8 @@ function App() {
 
     return (
         <div className="App">
-            <Greet name="Shlo" messageCount={20} isLoggedIn={false} />
+            
+            {/* <Greet name="Shlo" messageCount={20} isLoggedIn={false} />
             <Person name={personName} />
             <PersonList names={nameList} />
             <Status status="loading" />
@@ -48,7 +49,8 @@ function App() {
             <Input value="" handleChange={(event) => console.log(event)} />
             <Container
                 styles={{ border: '1px solid black', padding: '1rem' }}
-            />
+            /> */}
+            <Counter/>
         </div>
     )
 }
