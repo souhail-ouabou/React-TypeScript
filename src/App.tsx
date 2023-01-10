@@ -1,6 +1,8 @@
 import './App.css'
 import { Button } from './components/Button'
 import { Container } from './components/Container'
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import { Box } from './components/context/Box'
 import { Greet } from './components/Greet'
 import { Heading } from './components/Heading'
 import { Oscar } from './components/Oscar'
@@ -49,8 +51,11 @@ function App() {
             <Input value="" handleChange={(event) => console.log(event)} />
             <Container
                 styles={{ border: '1px solid black', padding: '1rem' }}
-            /> */}
-            <Counter/>
+            /> 
+            <Counter/>*/}
+            <ThemeContextProvider>
+                <Box/>
+            </ThemeContextProvider>
         </div>
     )
 }
